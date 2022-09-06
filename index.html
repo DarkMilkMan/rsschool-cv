@@ -51,13 +51,11 @@
                             letterFirst = true;
                         }
                     }
-                    
                     if (letter === letterFalse){
                         newWord = newWord + ')';
                     } else if (letterFirst || letter !== letterFalse){
                         newWord = newWord + '(';
-                    }	
-                    
+                    }
                 }
                 return newWord;
             }
