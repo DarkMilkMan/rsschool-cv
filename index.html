@@ -33,32 +33,6 @@
     <p>The goal of this exercise is to convert a string to a new string where each character in the new string is “(“ if that character appears only once in the original string, or “)” if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.</p>
     <pre>
         <code>
-            function duplicateEncode(word){
-                const upperWord = word.toUpperCase();
-                let newWord = '';
-                let letterFirst = true;
-                let letterLast = upperWord[upperWord.length - 1];
-                let letterFalse = '';
-                for(let i = 0; i &lt; upperWord.length; i++) {
-                    let letter = upperWord[i];
-                    for(let a = 0; a &lt; upperWord.length; a++) { 
-                        if (upperWord[a] === letter &amp;&amp; a !== i){
-                            letterFirst = false;
-                            letterFalse = upperWord[a];
-                        } else if (upperWord[a] === letter &amp;&amp; i === upperWord.length - 1){
-                            letterFirst = false;
-                        } else {
-                            letterFirst = true;
-                        }
-                    }
-                    if (letter === letterFalse){
-                        newWord = newWord + ')';
-                    } else if (letterFirst || letter !== letterFalse){
-                        newWord = newWord + '(';
-                    }
-                }
-                return newWord;
-            }
         </code>  
      </pre>
      <h2>Work experience</h2>
