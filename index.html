@@ -39,13 +39,13 @@
                 let letterFirst = true;
                 let letterLast = upperWord[upperWord.length - 1];
                 let letterFalse = '';
-                for(let i = 0; i < upperWord.length; i++) {
+                for(let i = 0; i &lt; upperWord.length; i++) {
                     let letter = upperWord[i];
-                    for(let a = 0; a < upperWord.length; a++) { 
-                        if (upperWord[a] === letter && a !== i){
+                    for(let a = 0; a &lt; upperWord.length; a++) { 
+                        if (upperWord[a] === letter &amp;&amp; a !== i){
                             letterFirst = false;
                             letterFalse = upperWord[a];
-                        } else if (upperWord[a] === letter && i === upperWord.length - 1){
+                        } else if (upperWord[a] === letter &amp;&amp; i === upperWord.length - 1){
                             letterFirst = false;
                         } else {
                             letterFirst = true;
